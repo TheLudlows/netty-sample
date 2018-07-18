@@ -26,7 +26,7 @@ public class ServerDemo {
         //创建ServerBootstrap实例
         ServerBootstrap boot = new ServerBootstrap();
         //创建一个EventLoopGroup
-        EventLoopGroup group =  new NioEventLoopGroup();
+        EventLoopGroup group = new NioEventLoopGroup();
         //指定实例来接受和处理新的连接。
         boot.group(group)
                 //指定使用NIO Channel传输
@@ -45,7 +45,7 @@ public class ServerDemo {
             future.channel().closeFuture().sync();
         } catch (InterruptedException e) {
             e.printStackTrace();
-        }finally {
+        } finally {
             group.shutdownGracefully().sync();
         }
     }

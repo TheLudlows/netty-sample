@@ -38,9 +38,9 @@ public class ClientDemo {
             ChannelFuture future = bootstrap.connect().sync();
             //阻塞到Channel关闭
             future.channel().closeFuture().sync();
-        }catch (Exception e) {
+        } catch (Exception e) {
             e.printStackTrace();
-        }finally {
+        } finally {
             //关闭线程池并释放资源
             group.shutdownGracefully().sync();
         }
