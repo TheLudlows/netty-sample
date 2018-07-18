@@ -6,6 +6,7 @@ import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
 import io.netty.util.CharsetUtil;
 
+
 public class ClientHandler extends SimpleChannelInboundHandler<ByteBuf> {
     @Override
     //当被通知Channel是活跃的时候，发送一条消息
