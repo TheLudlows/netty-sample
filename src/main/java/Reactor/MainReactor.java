@@ -33,8 +33,8 @@ public class MainReactor {
                     socketChannel.configureBlocking(false);
                     System.out.println("Accept request:" + socketChannel.socket().getInetAddress());
                     FollowerReactor follower = followers[++index%coreNum];
-                    follower.addChannel(socketChannel);
-                    follower.wakeUp();
+                    follower.register(socketChannel);
+                    //follower.wakeUp();
                 }
             }
         }
