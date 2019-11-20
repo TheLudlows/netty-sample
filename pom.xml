@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>four</groupId>S
+    <groupId>four</groupId>
     <artifactId>lc</artifactId>
     <version>1.0-SNAPSHOT</version>
     <build>
@@ -23,9 +23,8 @@
         <dependency>
             <groupId>io.netty</groupId>
             <artifactId>netty-all</artifactId>
-            <version>4.1.22.Final</version>
+            <version>4.1.24.Final</version>
         </dependency>
-        <!-- fast-json start-->
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
@@ -36,7 +35,6 @@
             <artifactId>junit</artifactId>
             <version>RELEASE</version>
         </dependency>
-        <!-- fast-json end-->
     </dependencies>
 
 
